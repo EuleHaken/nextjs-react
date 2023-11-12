@@ -1,3 +1,48 @@
+.blur-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  align-items: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+
+  transform: translate(-50%, -50%);
+
+  border: 1px solid black;
+  backdrop-filter: blur(10px);
+
+  overflow: hidden;
+}
+
+.box-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em;
+  color: black;
+  font-size: 2em;
+  cursor: pointer;
+
+  transition: all 0.15s ease-in-out;
+
+  text-align: center;
+}
+
+.box-item:hover {
+  scale: 1.1;
+}
+
+.background-image {
+  background-image: url(https://www.foerderland.de/fileadmin/_processed_/7/b/csm_hardware-komponenten_06f85289fd.jpg);
+  height: 95vh;
+
+  background-size: cover;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -97,7 +142,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);

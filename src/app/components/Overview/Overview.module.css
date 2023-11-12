@@ -1,0 +1,30 @@
+.overview {
+  display: grid;
+  border: 2px solid black;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  padding-left: 0;
+
+  background-color: var(--foreground-color);
+
+  margin-top: 0;
+  position: sticky;
+  top: 0;
+}
+
+.overview .heading {
+  font-size: 2.5em;
+  text-align: center;
+  border-bottom: 2.5px solid black;
+}
+
+.overview a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.overview-list {
+  margin: 0;
+  margin-left: 1em;
+  padding: 1em;
+}

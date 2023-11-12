@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+}
+
+main {
+  background-color: lightblue;
+
+  margin-top: 3em;
+
+  min-height: calc(100vh - 3em);
+}
+
+.navbar-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.navbar {
+  display: flex;
+  background-color: gray;
+  align-items: center;
+
+  height: 3em;
+}
+
+.navbar-logo {
+  margin-right: auto;
+}
+
+.burger {
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.menu {
+  background-color: lightgreen;
+  position: fixed;
+  top: 3em;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  padding: 10px;
+
+  max-height: calc(100vh - 3em);
+
+  overflow-y: scroll;
+}
+
+.hidden {
+  display: none;
+}
