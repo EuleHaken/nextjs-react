@@ -1,3 +1,26 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "es6": true
+  },
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "semi": [
+      "warn",
+      "always"
+    ],
+    "no-unused-vars": "warn",
+    "no-console": "off",
+    "indent": [
+      "warn",
+      "tab",
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "quotes": [
+      "warn",
+      "double"
+    ]
+  },
+  "parser": "babel-eslint"
 }

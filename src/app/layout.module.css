@@ -1,11 +1,15 @@
 .body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-
-  height: 100%;
+    background-color: var(--background-color);
+    background: var(--background);
+    color: var(--text-color);
 }
 
+/* TODO Not sure about that :/
+    I guess we set the min height for sections already, and body
+    and html already have a set height.
+    Maybe, if something breaks, try to re-enable this and see
+    what happens LOL!
 .main {
-  margin-top: var(--navbar-height);
   min-height: calc(100vh - var(--navbar-height));
 }
+*/

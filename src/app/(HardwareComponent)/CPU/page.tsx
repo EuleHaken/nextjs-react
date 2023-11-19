@@ -1,3 +1,114 @@
+import "./page.css";
+import ComponentLayout from "../ComponentLayout";
+import Image from "next/image";
+import Inhaltsverzeichnis from "../../components/Inhaltsverzeichnis";
+
+export default function CPU() {
+	const sections = [
+		{
+			id: "",
+			title: "Die CPU",
+			level: 1,
+			content: (
+				<>
+					<p>
+						Some cool information about the CPU
+					</p>
+					<p style={{
+						display: "flex",
+						flexDirection: "column",
+						alignItems: "center"
+					}}>
+						{"Hello ".repeat(50)}
+						<Image
+							src="/components/cpu.png"
+							alt="IMAGE"
+							width={100}
+							height={100}
+							quality={1}
+						/>
+						{"More text ".repeat(50)}
+					</p>
+					<p>
+						{"More text ".repeat(150)}
+					</p>
+				</>
+			),
+		},
+		{
+			id: "Aufgabe",
+			title: "Die Aufgaben der CPU",
+			level: 1,
+			content: (
+				<>
+					<p>
+						Some cool information about the CPU
+					</p>
+					<p>
+						{"Hello ".repeat(1500)}
+					</p>
+				</>
+			)
+		}
+	];
+
+	return <ComponentLayout name="CPU" sections={sections}/>;
+}
+
+/*
+export default function Page() {
+	return (
+		<PageName name="CPU">
+			<section id="Section1">
+				<div className="section-heading">
+					<h1>Die CPU</h1>
+				</div>
+				<p>
+					Some cool information about the CPU
+				</p>
+				<p style={{
+					display: "flex",
+					flexDirection: "column",
+					alignItems: "center"
+				}}>
+					{"Hello ".repeat(50)}
+					<Image
+						src="/components/cpu.png"
+						alt="IMAGE"
+						width={100}
+						height={100}
+						quality={1}
+					/>
+					{"More text ".repeat(50)}
+				</p>
+				<p>
+					{"More text ".repeat(150)}
+				</p>
+			</section>
+
+			<section id="Section2">
+				<div className="section-heading">
+					<h1>Aufgaben der CPU</h1>
+				</div>
+				<p>
+					Some cool information about the CPU
+				</p>
+				<p>
+					{"Hello ".repeat(1500)}
+				</p>
+				{
+					// TODO Make it, so that the section above stops earlier,
+					// 	so that the next section is on top without the old
+					// 	one still showing on top!
+				}
+			</section>
+		</PageName>
+	);
+}
+ */
+
+
+/*
 export default function Page() {
   return (
     <>
@@ -28,8 +139,8 @@ export default function Page() {
           {/* ... mit dem [[Takt]] oder Zyklus:
 					Eine art link zu [[Takt]] machen, wo kurz beschrieben wird, was damit gemeint ist (Wie bei Wikipedia),
 					sodass hier wirklich nur der Aufbau da steht, und nicht was eine Takt oder Zyklus ist.
-					
-					Vorerst bleibt der untenstehende Teil aber noch da, das soll erst später umgesetzt werden.*/}
+
+					Vorerst bleibt der untenstehende Teil aber noch da, das soll erst später umgesetzt werden./}
           Bei jedem Takt werden Milliarde von Transistoren geöffnet oder
           geschlossen. Dieser Takt wird in Hertz (1/s) angegeben. Ein Takt von 4
           GHz bedeutet also, dass pro Sekunde vier Milliarde (Giga) mal mehrere
@@ -68,7 +179,7 @@ export default function Page() {
           Ergebnis wird dann mit einem Status zum Steurwerk zurückgeführt.
         </p>
 
-        {/* TODO: Das mit Kernen genauer erklären, usw........*/}
+        {/* TODO: Das mit Kernen genauer erklären, usw......../}
       </div>
 
       <div>
@@ -206,3 +317,4 @@ export default function Page() {
     </>
   );
 }
+*/

@@ -1,3 +1,3 @@
 export default function cx(...classes: string[]) {
-  return classes.join(" ");
+	return classes.join(" ");
 }

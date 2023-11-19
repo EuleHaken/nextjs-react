@@ -1,5 +1,5 @@
 * {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
 
   list-style: none;
   text-decoration: none;
@@ -7,6 +7,11 @@
   --border-radius: 0.5em;
 
   --navbar-height: 3em;
+}
+
+html,
+body {
+  min-height: 100vh;
 }
 
 *,
@@ -18,19 +23,38 @@
 }
 
 :root {
-  --background-color: rgb(90, 90, 90);
-  --text-color: white;
+  --background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(200, 225, 250, 1) 100%);
+  /*--background-color: rgb(90, 90, 90);*/
+  --text-color: black;
   --foreground-color: rgb(240, 240, 240);
   --burger-menu-color: black;
+
+  --navbar-color: white;
+  --navbar-text-color: black;
+
+
+  --paragraph-background-a: linear-gradient(270deg, rgba(133, 210, 245, 1) 0%, rgba(255, 93, 93, 1) 40%, rgba(254, 92, 92, 1) 42%, rgba(237, 59, 59, 1) 100%);
+  --paragraph-font-size: 1.25rem;
+  --paragraph-background: rgba(240, 250, 250, 1);
 }
 
 [data-theme="dark"] {
-  --background-color: #35155d;
-  --text-color: rgb(230, 230, 230);
+  --background: #11100f;
+  /*--background-color: #35155d;*/
+  --text-color-OLD: rgb(230, 230, 230);
+  --text-color: #d2d0ce;
   --foreground-color: #512b81;
   --burger-menu-color: white;
 
   --heading-color: rgb(0, 0, 0);
+
+  --navbar-color: black;
+  --navbar-text-color: white;
+
+  --section-background-color: #242322;
+
+  --paragraph-background: linear-gradient(90deg, rgba(222, 0, 5, 0.7) 0%, rgba(255, 80, 40, 0.6) 100%);
+
 }
 
 /*:root {
