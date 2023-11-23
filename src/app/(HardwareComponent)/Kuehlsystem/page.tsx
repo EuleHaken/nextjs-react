@@ -33,7 +33,7 @@ export default function Page() {
 					<Image
 						src={Image_Airflow}
 						alt={"Airflow"}
-						style={{width: "25%"}}/>
+						style={{width: "25%", height: "auto"}}/>
 				</>
 			),
 			level: 1,
@@ -66,7 +66,8 @@ export default function Page() {
 					</p>
 					<Image
 						src={Image_Wasserkühlung}
-						alt={"Wasserkühlung"}/>
+						alt={"Wasserkühlung"}
+						style={{width: "auto", height: "auto"}}/>
 
 					<p>
 						Diese Prozesse helfen dabei, die Temperatur der Komponenten zu regulieren und eine

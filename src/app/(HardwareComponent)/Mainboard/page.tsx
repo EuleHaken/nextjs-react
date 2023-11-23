@@ -138,7 +138,7 @@ export default function Page() {
 					<Image
 						src={Image_Mainboard}
 						alt={"Mainboard"}
-						style={{width: "40rem"}}/>
+						style={{width: "40rem", height: "auto"}}/>
 
 					<p>
 						Ob man nun "Mainboard" oder "Motherboard" sagt, ist irrelevant, da beide Namen
@@ -196,7 +196,7 @@ export default function Page() {
 					<Image
 						src={Image_Erklärung}
 						alt={"Erklärung Mainboard"}
-						style={{width: "45rem"}}/>
+						style={{width: "45rem", height: "auto"}}/>
 
 					<p>
 						Der Chipsatz besteht aus mehreren Schaltkreisen, die zusammen eine Einheit bilden.
