@@ -1,9 +1,13 @@
 "use client";
 
-import {useState} from "react";
+import {ReactNode, useState} from "react";
 import {DropdownContext} from "../context/DropdownContext";
 
-export function DropdownProvider({children}) {
+type Props = {
+	children: ReactNode;
+}
+
+export function DropdownProvider({children}: Props) {
 	const [activeName, setActiveName] = useState<string>("");
 
 	return (

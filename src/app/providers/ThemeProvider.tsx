@@ -3,7 +3,11 @@
 import {ReactNode} from "react";
 import {ThemeProvider as NextThemeProvider} from "next-themes";
 
-export const ThemeProvider = ({children}: { children: ReactNode }) => (
+type Props = {
+	children: ReactNode;
+}
+
+export const ThemeProvider = ({children}:  Props) => (
 	<NextThemeProvider
 		attribute="data-theme"
 		defaultTheme="dark"

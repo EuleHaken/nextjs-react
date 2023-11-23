@@ -1,9 +1,13 @@
 "use client";
 
-import {useState} from "react";
+import {ReactNode, useState} from "react";
 import {PageNameContext} from "../context/PageNameContext";
 
-export function PageNameProvider({children}) {
+type Props = {
+	children: ReactNode;
+}
+
+export function PageNameProvider({children}: Props) {
 	const [pageName, setPageName] = useState<string>("");
 
 	return (

@@ -9,9 +9,19 @@
   --navbar-height: 3em;
 }
 
+.text-important {
+  color: red;
+}
+
+a, a:visited {
+  color: unset; /*TODO Maybe?*/
+}
+
 html,
 body {
   min-height: 100vh;
+
+  /*scroll-snap-type: y mandatory;*/
 }
 
 *,
@@ -34,8 +44,16 @@ body {
 
 
   --paragraph-background-a: linear-gradient(270deg, rgba(133, 210, 245, 1) 0%, rgba(255, 93, 93, 1) 40%, rgba(254, 92, 92, 1) 42%, rgba(237, 59, 59, 1) 100%);
-  --paragraph-font-size: 1.25rem;
+  --paragraph-font-size: 1.25rem; /*TODO make that a lot larger!!*/
   --paragraph-background: rgba(240, 250, 250, 1);
+
+  /*#region Dropdown.tsx*/
+  --dropdown-heading-bg-color: rgba(0, 0, 0, 0.1);
+  --dropdown-heading-hover-bg-color: rgba(0, 0, 0, 0.2);;
+  --dropdown-menu-bg-color: white;
+
+  /*#endregion*/
+
 }
 
 [data-theme="dark"] {
@@ -54,6 +72,13 @@ body {
   --section-background-color: #242322;
 
   --paragraph-background: linear-gradient(90deg, rgba(222, 0, 5, 0.7) 0%, rgba(255, 80, 40, 0.6) 100%);
+
+  /*#region Dropdown.tsx*/
+  --dropdown-heading-bg-color: rgba(255, 255, 255, 0.2);
+  --dropdown-heading-hover-bg-color: rgba(255, 255, 255, 0.3);;
+  --dropdown-menu-bg-color: black;
+
+  /*#endregion*/
 
 }
 

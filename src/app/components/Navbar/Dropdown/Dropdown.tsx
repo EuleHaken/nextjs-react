@@ -14,12 +14,12 @@ type Props = {
 export default function Dropdown({children, name}: Props) {
 	const {activeName, setActiveName} = useDropdownContext();
 	const isActive = (name === activeName);
-	const dropdownRef = useRef(null);
+	const dropdownRef = useRef<any>(null);
 
 	useEffect(() => {
-		const handleClickOutside = event => {
+		const handleClickOutside = (event: Event) => {
 			// If the active element exists and the clicked target is not within the active element
-			if (isActive && dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+			if (isActive && dropdownRef.current && !dropdownRef.current?.contains(event.target)) {
 				setActiveName(""); // Close the dropdown
 			}
 		};

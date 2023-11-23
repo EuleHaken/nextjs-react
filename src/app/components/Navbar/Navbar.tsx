@@ -14,10 +14,6 @@ export default function Navbar() {
 	const {sections} = useInhaltsverzeichnisContext();
 
 	const pathname = usePathname();
-	console.log(pathname);
-
-	console.log("INHALTSVERZEICHNIS_SECTIONS");
-	console.log(sections);
 
 	/*
 	* TODO
@@ -26,10 +22,10 @@ export default function Navbar() {
 	return (
 		<header className={styles.header}>
 			<nav className={styles.navbar}>
-				<div className={styles["navbar-middle"]}>
+				<Link href="/" className={styles["navbar-middle"]}>
 					<span>Hardware-</span>
 					<span>komponenten</span>
-				</div>
+				</Link>
 
 				{(pathname !== "/") && (
 					<>
@@ -45,7 +41,28 @@ export default function Navbar() {
 										CPU
 									</Link>
 									<Link href="/RAM">
-										RAM
+										Arbeitsspeicher (RAM)
+									</Link>
+									<Link href="/Mainboard">
+										Mainboard / Motherboard
+									</Link>
+									<Link href="/GPU">
+										Grafikkarte (GPU)
+									</Link>
+									<Link href="/Kuehlsystem">
+										Kühlsystem
+									</Link>
+									<Link href="/Netzteil">
+										Netzteil
+									</Link>
+									<Link href="/Netzwerkkarte">
+										Netzwerkkarte
+									</Link>
+									<Link href="/Soundkarte">
+										Soundkarte
+									</Link>
+									<Link href="/Festplatte">
+										Festplatte
 									</Link>
 								</Dropdown>
 
@@ -63,7 +80,10 @@ export default function Navbar() {
 					</>
 				)}
 
-				<div>
+				<div className={styles["navbar-right"]}>
+					<Link className={styles["quellen-button"]} href="/Quellen">
+						Quellen
+					</Link>
 					<ThemeSwitcher/>
 				</div>
 			</nav>

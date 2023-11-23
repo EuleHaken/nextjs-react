@@ -36,8 +36,30 @@
 }
 
 .navbar-right {
+    display: flex;
+    gap: 1rem;
+
+    align-items: center;
+    height: 100%;
+}
+
+.quellen-button {
+    display: flex;
+
+    align-items: center;
     height: 100%;
 
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
+    background-color: var(--dropdown-heading-bg-color);;
+}
+
+.quellen-button:hover {
+    background-color: var(--dropdown-heading-hover-bg-color);;
 }
 
 .page-name {
@@ -51,6 +73,17 @@
     align-items: center;
     gap: 0.75rem;
     height: 100%;
+}
+
+.dropdown-container a {
+    font-size: 1.25rem;
+    padding: 0.5rem 0.75rem 0.5rem 0.5rem;
+}
+
+.dropdown-container a:hover {
+    text-decoration: underline;
+    padding-left: 0.5em;
+    background-color: var(--dropdown-heading-bg-color);
 }
 
 
